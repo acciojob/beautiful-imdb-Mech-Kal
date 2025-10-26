@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb - Interstellar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #facc15;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .moviePic {
+      height: 400px;
+      width: 270px;
+      border-radius: 10px;
+      opacity: 0.9;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .moviePic:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .movieDetail {
+      position: relative;
+      top: 20px;
+      width: 60%;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #e2e8f0;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>Interstellar (2014)</h1>
+  <img src="https://m.media-amazon.com/images/I/71n58i4E3zL._AC_SL1500_.jpg" alt="Interstellar Poster" class="moviePic">
+  <p class="movieDetail">
+    A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival. 
+    Directed by Christopher Nolan, <em>Interstellar</em> is a breathtaking blend of science fiction, emotion, and 
+    visual brilliance — exploring love, time, and the fate of our species beyond the stars.
+  </p>
 </body>
-
 </html>
